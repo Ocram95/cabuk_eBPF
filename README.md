@@ -6,10 +6,10 @@ This repository contains the implementation of the first regularity measure in a
 
 # Basic Information and Usage
 The first version of the implementation requires to tune different parameters, hard-coded within the python script:
--```dev```: it specifies the interface to attack the eBPF filter.
--```direction```: it specifies the direction (ingress, egress).
--```WINDOW```: it specifies amount of packet per window.
--```NUMBER_STD_CONSIDERED```: it specifies the amount of intermediate standard deviations to calculate before giving the final regularity measure.
+- ```dev```: it specifies the interface to attack the eBPF filter.
+- ```direction```: it specifies the direction (ingress, egress).
+- ```WINDOW```: it specifies amount of packet per window.
+- ```NUMBER_STD_CONSIDERED```: it specifies the amount of intermediate standard deviations to calculate before giving the final regularity measure.
 
 After setting all the parameters, simply run the filter: ```python3 cabuk_eBPF```.
 
