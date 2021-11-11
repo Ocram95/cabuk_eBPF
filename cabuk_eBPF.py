@@ -5,10 +5,10 @@ from pr2modules.netlink.exceptions import NetlinkError
 import time
 
 
-dev = "enp0s8"
+dev = "your_dev"
 ipr = IPRoute()
 idx = ipr.link_lookup(ifname=dev)[0]
-direction = "ingress"
+#direction = "ingress"
 direction = "egress"
 try:
     ipr.tc("add", "clsact", idx, "ffff:")
