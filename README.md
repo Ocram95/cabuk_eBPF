@@ -11,7 +11,8 @@ The first version of the implementation requires to tune different parameters, h
 - ```WINDOW```: it specifies amount of packet per window.
 - ```NUMBER_STD_CONSIDERED```: it specifies the amount of intermediate standard deviations to calculate before giving the final regularity measure.
 
-After setting all the parameters, simply run the filter: ```python3 cabuk_eBPF```.
+After setting all the parameters, simply run the filter: 
+```python3 cabuk_eBPF```
 
 The regularity measure can be seen by checking the ```trace_pipe```:
 ```
